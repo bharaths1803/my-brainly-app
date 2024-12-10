@@ -12,7 +12,7 @@ const useGetHash = () => {
         throw new Error(data.error)
       }
       else{
-        shareLinkRef.current.value = `http://localhost:5000/share/${data}`
+        shareLinkRef.current.value = `https://my-brainly-app.onrender.com/share/${data}`
       }
     }catch(error){
       toast.error(error.message)
